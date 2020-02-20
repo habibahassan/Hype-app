@@ -1,0 +1,235 @@
+<!-- {% extends 'base.html' %}
+
+{% block content %}
+
+
+
+<ul class="nav navbar-nav navbar-right topright">
+    <li>
+        <a href="{{url_for('auth.login')}}">
+            <span class="glyphicon glyphicon-user"></span> Sign Up</a>
+    </li>
+    <li>
+        <a href="{{url_for('auth.register')}}">
+            <span class="glyphicon glyphicon-log-in"></span> Login</a>
+    </li>
+</ul>
+
+<div class="head">
+    <h1>
+        <span class="fancy">
+            <span>Hype App</span>
+        </span>
+    </h1>
+    <p>
+        <em>The official Hype</em>
+    </p>
+
+</div>
+
+
+
+<div class="links" style="list-style:none">
+        <ul>
+            <a class="button" href="#video">Venues</a>
+            <a class="button" href="#parks">Parks</a>
+            <a class="button" href="#resort">Resorts</a>
+        </ul>
+    </div> 
+
+<div class="col-md-12 second" name="video">
+    <img class="vida" src="{{url_for('static',filename='Images/giphy (1).gif')}}">
+</div>
+
+<div class="container-fluid" style="padding-top:60vh">
+    <div class="col-md-9">
+        <div class="col-md-12">
+            <div class="artists">
+                <img href="#video" src="{{url_for('static',filename='Images/image10.jpeg')}}">
+                <p><strong>Book Your Venue</strong><br>
+
+                    Whether you are planning an intimate dinner for friends,<br> a corporate luncheon or an
+                    <br>extravagant soirée, sbe’s best-in-class service,<br> versatile venues and award-winning
+                    catering will guarantee that your event <br>will be a success.
+
+                    For private parties and large groups planning <br>an event</p>
+                <ul>
+                        <a><button class="myButton">Readmore</button></a>
+                </ul>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+             <script>
+                 $(document).ready(function(){
+              $("button").click(function(){
+                   $("p").toggle();
+                  });
+                });
+              </script> 
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="Djs">
+                <img href="#parks" src="{{url_for('static',filename='Images/image11.jpeg')}}">
+                <p>Something old, something new, something borrowed, something <br>unforgettable. From rooftop
+                    receptions to beachfront brunches, <br>our signature collection of hotels, <br>restaurants and nightlife
+                    venues provide the perfect setting for <br>your big event. Featuring award-winning <br>catering, premium
+                    mixology and best-in-class service, our team of event <br>experts will help you host one-of-a-kind
+                    celebrations that you won’t soon forget.</p>
+                <br>
+                <ul>
+                        <a><button class="myButton">Readmore</button></a>
+
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <div class="Producers">
+                <img href="#resort" src="{{url_for('static',filename='Images/image12.jpeg')}}">
+                <p>A blend of African heritage and boldness welcomes visitors with the<br>
+                     down-to-earth warmth of a much-loved home away from home. <br>
+                    Spacious interiors are styled with a varied mix of rich colours, and inviting textures and layers, making Naivasha Kongoni Lodge an idyllic retreat.<br>
+                     Naivasha Kongoni Lodge offers guests the ultimate in personal comfort, luxury and innovative business and leisure facilities.
+                
+                    
+                    <ul>
+                            <a><button class="myButton">Readmore</button></a>
+                    </ul>
+                    <style>
+                    
+                    </style>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-3">
+
+        <ul class class="aside">
+            <div class="dropdown">
+                <button class="asidebtn">Post</button>
+                <div class="dropdown-content">
+                    <a href="#">Music</a>
+                    <a href="#">Demo</a>
+                    <a href="#">Remixes</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="asidebtn">Catalogue</button>
+                <div class="dropdown-content" style="text-align: center">
+                    <a href="#">Most rated</a>
+                    <a href="#">Recent uploads</a>
+                    <a href="#">Popular remixes</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="asidebtn">Genres</button>
+                <div class="dropdown-content">
+                    <a href="#">Hop Hop</a>
+                    <a href="#">RNB</a>
+                    <a href="#">TRAP</a>
+                    <a href="#">House Music</a>
+                    <a href="">Dubstep</a>
+                    <a href="">Kwaito</a>
+                    <a href="">Afro Soul</a>
+                </div>
+            </div>
+        </ul>
+        <div class="">
+            <ul>
+                <blockquote class="list-unstyled sideimg">
+                    <div class="col-md-12">
+                        <h2>Recent Activities</h2>
+                        <li>
+                            <img class="cake" src="{{url_for('static',filename='Images/users/user1.png')}}" alt="">User
+                            1</li>
+                        <li>
+                            <img class="cake" src="{{url_for('static',filename='Images/users/user1.png')}}" alt="">User
+                            2</li>
+                        <li>
+                            <img class="cake" src="{{url_for('static',filename='Images/users/user1.png')}}" alt="">User
+                            3</li>
+                        <li>
+                            <img class="cake" src="{{url_for('static',filename='Images/users/user1.png')}}" alt="">User
+                            4</li>
+                        <li>
+                            <img class="cake" src="{{url_for('static',filename='Images/users/user1.png')}}" alt="">User
+                            5</li>
+                        <li>
+                            <img class="cake" src="{{url_for('static',filename='Images/users/user1.png')}}" alt="">User
+                            6</li>
+
+                    </div>
+
+                </blockquote>
+            </ul>
+
+            <ul>
+                <blockquote class="list-unstyled sideimg">
+                    <div class="col-md-12">
+                        <h2>Developers</h2>
+                        <li>
+                            <img class="cake" src="{{url_for('static',filename='Images/users/user1.png')}}" alt="">Quavo
+                        </li>
+                        <li>
+                            <img class="cake" src="{{url_for('static',filename='Images/users/user2.png')}}"
+                                alt="">Trinity</li>
+                        <li>
+                            <img class="cake" src="{{url_for('static',filename='Images/users/user1.png')}}"
+                                alt="">Celine</li>
+                        <li>
+                            <img class="cake" src="{{url_for('static',filename='Images/users/user2.png')}}"
+                                alt="">Phannice</li>
+
+
+                    </div>
+
+                </blockquote>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="footer">
+    <br>
+    <div class="images">
+        <img src="{{url_for('static',filename='Images/facebook1.png')}}" width="40px" height="40px">
+        <img src="{{url_for('static',filename='Images/twitter1.png')}}" width="40px" height="40px">
+        <img src="{{url_for('static',filename='Images/linkedin.png')}}" width="40px" height="40px">
+    </div>
+
+    <div id="Contact" class="tabcontent">
+
+        <a href="mailto:beatshub@gmail.com ">
+            <h4>Contact us :+254712345679</h4>
+        </a>
+
+    </div>
+
+    <div id="Policy" class="tabcontent">
+    </div>
+
+    <div id="Work" class="tabcontent">
+    </div>
+
+    <div id="Legal" class="tabcontent">
+    </div>
+
+    <p>A world class Hype platform</p>
+    <p> Hype app 2020.All rights reserved.</p>
+    <br>
+
+    <a href="#" class="float">
+        <i class="fa fa-envelope my-float"></i>
+    </a>
+    <div class="label-container">
+        <div class="label-text">Feedback</div>
+        <i class="fa fa-play label-arrow"></i>
+    </div>
+</div>
+
+
+{% endblock %} -->
