@@ -1,5 +1,5 @@
 .mainpage {
-    background: url(../img/bg.jpg) no-repeat center center fixed;
+    background: url() no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -7,7 +7,7 @@
   }
   
   .second {
-    background: url(../img/dark.jpg) no-repeat center center fixed;
+    background: url() no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -22,21 +22,6 @@
     background-size: cover;
   }
   
-  .loginpage{
-    background: url(../img/nav.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  
-  .signuppage{
-    background: url(../img/nav.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
   
   .fancy {
     line-height:0;
