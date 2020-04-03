@@ -6,13 +6,21 @@
 
 <ul class="nav navbar-nav navbar-right topright">
     <li>
-        <a href="{{url_for('auth.login')}}">
-            <span class="glyphicon glyphicon-user"></span> Sign Up</a>
+        <a href="{{url_for('auth.register')}}">
+            <span class="glyphicon glyphicon-user"></span> Sign UP</a>
     </li>
     <li>
-        <a href="{{url_for('auth.register')}}">
-            <span class="glyphicon glyphicon-log-in"></span> Login</a>
+        <a href="{{url_for('auth.login')}}">
+            <span class="glyphicon glyphicon-log-in"></span> Log In</a>
     </li>
+    <li >
+        <a href="{{ url_for('auth.logout')}}">
+            <i class="fa fa-sign-out"></i> Sign out</a>
+            <li class="nav-item">
+              <a  href="{{ url_for('auth.login')}}">
+              <i class="fa fa-user-plus"></i> Account</a>
+            </li>
+
 </ul>
 
 <div class="head">
@@ -101,95 +109,6 @@
                 </p>
             </div>
         </div>
-    </div>
-
-
-    <div class="col-md-3">
-
-        <ul class class="aside">
-            <div class="dropdown">
-                <button class="asidebtn">Post</button>
-                <div class="dropdown-content">
-                    <a href="#">Music</a>
-                    <a href="#">Demo</a>
-                    <a href="#">Remixes</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="asidebtn">Catalogue</button>
-                <div class="dropdown-content" style="text-align: center">
-                    <a href="#">Most rated</a>
-                    <a href="#">Recent uploads</a>
-                    <a href="#">Popular remixes</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="asidebtn">Genres</button>
-                <div class="dropdown-content">
-                    <a href="#">Hop Hop</a>
-                    <a href="#">RNB</a>
-                    <a href="#">TRAP</a>
-                    <a href="#">House Music</a>
-                    <a href="">Dubstep</a>
-                    <a href="">Kwaito</a>
-                    <a href="">Afro Soul</a>
-                </div>
-            </div>
-        </ul>
-        <div class="">
-            <ul>
-                <blockquote class="list-unstyled sideimg">
-                    <div class="col-md-12">
-                        <h2>Recent Activities</h2>
-                        <li>
-                            <img class="cake" src="{{url_for('static',filename='Images/users/user1.png')}}" alt="">User
-                            1</li>
-                        <li>
-                            <img class="cake" src="{{url_for('static',filename='Images/users/user1.png')}}" alt="">User
-                            2</li>
-                        <li>
-                            <img class="cake" src="{{url_for('static',filename='Images/users/user1.png')}}" alt="">User
-                            3</li>
-                        <li>
-                            <img class="cake" src="{{url_for('static',filename='Images/users/user1.png')}}" alt="">User
-                            4</li>
-                        <li>
-                            <img class="cake" src="{{url_for('static',filename='Images/users/user1.png')}}" alt="">User
-                            5</li>
-                        <li>
-                            <img class="cake" src="{{url_for('static',filename='Images/users/user1.png')}}" alt="">User
-                            6</li>
-
-                    </div>
-
-                </blockquote>
-            </ul>
-
-            <ul>
-                <blockquote class="list-unstyled sideimg">
-                    <div class="col-md-12">
-                        <h2>Developers</h2>
-                        <li>
-                            <img class="cake" src="{{url_for('static',filename='Images/users/user1.png')}}" alt="">Quavo
-                        </li>
-                        <li>
-                            <img class="cake" src="{{url_for('static',filename='Images/users/user2.png')}}"
-                                alt="">Trinity</li>
-                        <li>
-                            <img class="cake" src="{{url_for('static',filename='Images/users/user1.png')}}"
-                                alt="">Celine</li>
-                        <li>
-                            <img class="cake" src="{{url_for('static',filename='Images/users/user2.png')}}"
-                                alt="">Phannice</li>
-
-
-                    </div>
-
-                </blockquote>
-            </ul>
-
-        </div>
-
     </div>
 </div>
 

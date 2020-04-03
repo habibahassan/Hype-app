@@ -39,4 +39,9 @@ class User(UserMixin,db.Model):
             id = jwt.decode(token, os.environ.get('SECRET_KEY'),algorithms=['HS256'])['reset_password']
         except:
             return
-        return User.query.get(id)  
+        return User.query.get(id)
+class feedback(db.Model):
+    __tablename__ = 'feedback'
+    id = db.Column(db.Integer,primary_key = True)
+    subscriber_name = db.Column(db.String(50))
+    subscriber_email = db.Column(db.String(255), unique = True)  
